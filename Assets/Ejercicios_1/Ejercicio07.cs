@@ -28,7 +28,7 @@ namespace Ejercicios_1
             for (int i = 0; i < 3; i++)
             {
                 GameObject esfera = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                esfera.transform.position = Vector3.right * i;
+                esfera.transform.position = Vector3.right * i * 100f;
             }
         }
     }
