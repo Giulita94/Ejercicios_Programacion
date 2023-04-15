@@ -3,22 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Ejercicio03 : MonoBehaviour
+namespace Ejercicios_1
 {
-    
-        
-        Vector3 v = new Vector3(111.1f, -5f, 4.5f);
-        void Start ()
+    /// <summary>
+    /// Crear un script que genere un cubo al inicio y duplique su escala
+    /// </summary>
+    public class Ejercicio03 : MonoBehaviour
+    {
+        void Start()
         {
-            GameObject Cube = new GameObject();
-            Cube.transform.position = v;
+            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            cube.transform.localScale *= 2f;
         }
-        void Update ()
-        {
-
-
-        }
-    
-   
-
+    }
 }
